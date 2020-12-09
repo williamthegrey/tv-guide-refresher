@@ -1,0 +1,8 @@
+[
+  {
+    "id": "refresh_time",
+    "label": "Refresh Time",
+    "type": "text",
+    "default": "00:00"
+  }
+]
