@@ -5,7 +5,7 @@
       <paths name="local">
         <serverdata>
           <mappings>
-            <mapping deploy="tv-guide-refresher.bundle" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="Contents" local="$PROJECT_DIR$/Contents" web="/" />
           </mappings>
         </serverdata>
       </paths>

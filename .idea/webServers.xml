@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="2e98df9c-3af4-46ed-9196-0632204bdaea" name="local" url="http://localhost">
-        <fileTransfer mountedRoot="C:\Users\wywil\AppData\Local\Plex Media Server\Plug-ins" accessType="MOUNT" port="0" />
+        <fileTransfer mountedRoot="C:\Users\wywil\AppData\Local\Plex Media Server\Plug-ins\tv-guide-refresher.bundle" accessType="MOUNT" port="0" />
       </webServer>
     </option>
   </component>
