@@ -6,7 +6,7 @@ archive_name = tv-guide-refresher.bundle.tar.gz
 
 all:
 	mkdir -p $(lib_dir)/$(shared_lib_dir)
-	pip install -t $(lib_dir)/$(shared_lib_dir) -r requirements.txt
+	pip2 install -t $(lib_dir)/$(shared_lib_dir) -r requirements.txt
 	mkdir -p $(dist_dir)/$(bundle_dir)
 	cp -r Contents $(dist_dir)/$(bundle_dir)
 	( cd $(dist_dir) && tar -czf $(archive_name) $(bundle_dir) )
