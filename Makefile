@@ -12,6 +12,7 @@ all:
 	mkdir -p $(dist_dir)/$(bundle_dir)
 	cp -r Contents $(dist_dir)/$(bundle_dir)
 	cp $(version_file) $(dist_dir)/$(bundle_dir)
+	cp README.md $(dist_dir)/$(bundle_dir)
 	( cd $(dist_dir) && zip -r $(archive_name) $(bundle_dir) )
 	rm -rf $(dist_dir)/$(bundle_dir)
 
