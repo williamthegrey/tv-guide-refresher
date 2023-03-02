@@ -4,7 +4,7 @@ lib_dir = Contents/Libraries
 shared_lib_dir = Shared
 dist_dir = dist
 bundle_dir = tv-guide-refresher.bundle
-archive_name = tv-guide-refresher-$(version).bundle.zip
+artifact_name = tv-guide-refresher-$(version).bundle.zip
 
 all:
 	mkdir -p $(lib_dir)/$(shared_lib_dir)
@@ -12,8 +12,9 @@ all:
 	mkdir -p $(dist_dir)/$(bundle_dir)
 	cp -r Contents $(dist_dir)/$(bundle_dir)
 	cp $(version_file) $(dist_dir)/$(bundle_dir)
+	cp LICENSE $(dist_dir)/$(bundle_dir)
 	cp README.md $(dist_dir)/$(bundle_dir)
-	( cd $(dist_dir) && zip -r $(archive_name) $(bundle_dir) )
+	( cd $(dist_dir) && zip -r $(artifact_name) $(bundle_dir) )
 	rm -rf $(dist_dir)/$(bundle_dir)
 
 clean:
